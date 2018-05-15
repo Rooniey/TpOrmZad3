@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TpORM", "TpORM\TpORM.csproj", "{1D254A0C-4D99-4D28-9000-34C6AFB5F87E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TpOrmTests", "TpOrmTests\TpOrmTests.csproj", "{47E84B05-8138-48E4-B1F5-3CBE478656DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D254A0C-4D99-4D28-9000-34C6AFB5F87E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D254A0C-4D99-4D28-9000-34C6AFB5F87E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D254A0C-4D99-4D28-9000-34C6AFB5F87E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D254A0C-4D99-4D28-9000-34C6AFB5F87E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47E84B05-8138-48E4-B1F5-3CBE478656DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47E84B05-8138-48E4-B1F5-3CBE478656DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47E84B05-8138-48E4-B1F5-3CBE478656DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47E84B05-8138-48E4-B1F5-3CBE478656DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4734D022-1EF9-4670-82E9-94E5EC9C29F2}
+	EndGlobalSection
+EndGlobal
