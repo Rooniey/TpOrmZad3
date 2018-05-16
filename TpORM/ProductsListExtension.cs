@@ -8,15 +8,15 @@ namespace TpORM
     {
         public static List<Product> GetProductsWithoutCategoryImperative(this List<Product> products)
         {
-            IEnumerable<Product> en = products.Where(product => product.ProductSubcategory == null).ToList();
+            IEnumerable<Product> en = products.Where(product => product.ProductSubcategory == null);
             return en.ToList();
         }
 
         public static List<Product> GetProductsWithoutCategoryDeclarative(this List<Product> products)
         {
-            IEnumerable<Product> en  = from Product p in products
-                where p.ProductSubcategory == null
-                select p;
+            IEnumerable<Product> en = from Product p in products
+                                      where p.ProductSubcategory == null
+                                      select p;
             return en.ToList();
         }
 
@@ -26,21 +26,19 @@ namespace TpORM
             return en.ToList();
         }
 
-        //TODO: add declarative get page
-
         public static string GetProductsWithVendors(this List<Product> products)
         {
             using (var db = new AdventureWorksDataContext())
             {
                 var productsVendors = (from Vendor vendor in db.Vendors
-                    join ProductVendor productVendor in db.ProductVendors on vendor.BusinessEntityID equals productVendor.BusinessEntityID
-                    join Product product in db.Products on productVendor.ProductID equals product.ProductID
-                    where products.Select(p => p.ProductID).Contains(product.ProductID)
-                    select new
-                    {
-                        ProductName = product.Name,
-                        VendorName = vendor.Name
-                    }).ToList();
+                                       join ProductVendor productVendor in db.ProductVendors on vendor.BusinessEntityID equals productVendor.BusinessEntityID
+                                       join Product product in db.Products on productVendor.ProductID equals product.ProductID
+                                       where products.Select(p => p.ProductID).Contains(product.ProductID)
+                                       select new
+                                       {
+                                           ProductName = product.Name,
+                                           VendorName = vendor.Name
+                                       }).ToList();
 
                 StringBuilder sb = new StringBuilder();
                 foreach (var pv in productsVendors)

@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
 using TpORM;
 
 namespace TpOrmTests
@@ -11,13 +11,12 @@ namespace TpOrmTests
         private const int numberOfCategorised = 5;
         private List<Product> products;
 
-
         [TestInitialize]
         public void Setup()
         {
             products = new List<Product>();
             for (int i = 0; i < numberOfUncategorised; i++)
-            { 
+            {
                 products.Add(new Product()
                 {
                     ProductID = i,
@@ -35,9 +34,7 @@ namespace TpOrmTests
                     }
                 });
             }
-
         }
-
 
         [TestMethod]
         public void GetProductsWithoutCategoryImperative_ShouldReturnProperValues()
@@ -69,7 +66,6 @@ namespace TpOrmTests
             {
                 Assert.IsTrue(page.Contains(products[i]));
             }
-
         }
 
         [TestMethod]
@@ -81,9 +77,15 @@ namespace TpOrmTests
             {
                 Assert.IsTrue(page.Contains(products[i]));
             }
-
         }
 
-        //TODO: add product/vendor string test
+        [TestMethod]
+        public void GetProductsWithVendors_ShouldReturnProperValues()
+        {
+            var x = products.GetProductsWithVendors();
+            Assert.IsTrue(x.Contains("Adjustable Race-Litware, Inc."));
+            Assert.IsTrue(x.Contains("Headset Ball Bearings-American Bicycles and Wheels"));
+            Assert.IsTrue(x.Contains("Bearing Ball-Wood Fitness"));
+        }
     }
 }

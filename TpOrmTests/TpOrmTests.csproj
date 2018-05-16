@@ -51,6 +51,7 @@
     <Compile Include="DataManagerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ProductListExtensionTests.cs" />
+    <Compile Include="AdaptingFactoryTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

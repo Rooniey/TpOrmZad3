@@ -1,0 +1,7 @@
+C:\Users\Marek\source\repos\TpORM\TpORM\bin\Debug\TpORM.dll.config
+C:\Users\Marek\source\repos\TpORM\TpORM\bin\Debug\TpORM.dll
+C:\Users\Marek\source\repos\TpORM\TpORM\bin\Debug\TpORM.pdb
+C:\Users\Marek\source\repos\TpORM\TpORM\obj\Debug\TpORM.csprojResolveAssemblyReference.cache
+C:\Users\Marek\source\repos\TpORM\TpORM\obj\Debug\TpORM.csproj.CoreCompileInputs.cache
+C:\Users\Marek\source\repos\TpORM\TpORM\obj\Debug\TpORM.dll
+C:\Users\Marek\source\repos\TpORM\TpORM\obj\Debug\TpORM.pdb

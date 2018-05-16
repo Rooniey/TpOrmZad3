@@ -1,0 +1,17 @@
+C:\Users\Marek\source\repos\TpORM\TpOrmTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Marek\source\repos\TpORM\TpOrmTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Marek\source\repos\TpORM\TpOrmTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Marek\source\repos\TpORM\TpOrmTests\bin\Debug\TpOrmTests.dll
+C:\Users\Marek\source\repos\TpORM\TpOrmTests\bin\Debug\TpOrmTests.pdb
+C:\Users\Marek\source\repos\TpORM\TpOrmTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Marek\source\repos\TpORM\TpOrmTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Marek\source\repos\TpORM\TpOrmTests\bin\Debug\TpORM.dll
+C:\Users\Marek\source\repos\TpORM\TpOrmTests\bin\Debug\TpORM.pdb
+C:\Users\Marek\source\repos\TpORM\TpOrmTests\bin\Debug\TpORM.dll.config
+C:\Users\Marek\source\repos\TpORM\TpOrmTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Marek\source\repos\TpORM\TpOrmTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Marek\source\repos\TpORM\TpOrmTests\obj\Debug\TpOrmTests.csprojResolveAssemblyReference.cache
+C:\Users\Marek\source\repos\TpORM\TpOrmTests\obj\Debug\TpOrmTests.csproj.CoreCompileInputs.cache
+C:\Users\Marek\source\repos\TpORM\TpOrmTests\obj\Debug\TpOrmTests.csproj.CopyComplete
+C:\Users\Marek\source\repos\TpORM\TpOrmTests\obj\Debug\TpOrmTests.dll
+C:\Users\Marek\source\repos\TpORM\TpOrmTests\obj\Debug\TpOrmTests.pdb

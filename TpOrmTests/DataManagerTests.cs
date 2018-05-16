@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
 using TpORM;
 
 namespace TpOrmTests
@@ -29,7 +29,7 @@ namespace TpOrmTests
 
             Assert.AreEqual(3, products.Count);
 
-            int[] ids = {320, 321, 322};
+            int[] ids = { 320, 321, 322 };
             foreach (int id in ids)
             {
                 Assert.IsTrue(products.Exists(p => p.ProductID == id));
@@ -50,7 +50,7 @@ namespace TpOrmTests
                 Assert.IsTrue(products.Exists(p => p == name));
             }
         }
-      
+
         [TestMethod]
         public void GetProductVendorByProductName_ShouldReturnProperValues()
         {
@@ -77,13 +77,12 @@ namespace TpOrmTests
 
             Assert.AreEqual(2, products.Count);
 
-            int[] ids = {709, 798};
+            int[] ids = { 709, 798 };
             foreach (int id in ids)
             {
                 Assert.IsTrue(products.Exists(p => p.ProductID == id));
             }
         }
-
 
         [TestMethod]
         public void GetNProductsFromCategory_ShouldReturnProperValues()
@@ -113,7 +112,7 @@ namespace TpOrmTests
         [TestMethod]
         public void GetTotalStandardCostByCategory_ShouldReturnProperValues()
         {
-            ProductCategory pc  = new ProductCategory()
+            ProductCategory pc = new ProductCategory()
             {
                 ProductCategoryID = 3
             };
@@ -125,27 +124,22 @@ namespace TpOrmTests
         [TestMethod]
         public void GetNRecentlyReviewedProduct_ShouldReturnProperValues()
         {
-            
             var reviewedProducts = DataManager.GetNRecentlyReviewedProducts(2);
 
-            int[] ids = { 937, 798};
+            int[] ids = { 937, 798 };
             foreach (int id in ids)
             {
                 Assert.IsTrue(reviewedProducts.Exists(p => p.ProductID == id));
             }
-
         }
 
         [TestMethod]
         public void GetNRecentlyReviewedProduct_WhenCalledOnLessProducts_ShouldReturnThemAll()
         {
-
             var reviewedProducts = DataManager.GetNRecentlyReviewedProducts(4);
 
             Assert.AreEqual(3, reviewedProducts.Count);
-
         }
-
 
         [TestMethod]
         public void GetTotalStandardCostByCategory_WhenCalledForNoPresentProductsInCategory_ShouldReturnZero()
@@ -158,6 +152,5 @@ namespace TpOrmTests
 
             Assert.AreEqual(0, total);
         }
-
     }
 }
